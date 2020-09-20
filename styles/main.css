@@ -1,13 +1,26 @@
 body {
-    background-color: rgb(37, 33, 43);
+    position: static;
+    background-color: black;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../content/bg1.jpg");
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
 }
 
 #timeDisplay {
     position: relative;
     padding-top: 35vh;
-    left: 30vw;
+    left: 29.5vw;
     width: 40vw;
-    color: rgb(138, 132, 132);
+    color: rgb(228, 228, 228);
     font-size: 10vw;
     font-family: 'Kumbh Sans', sans-serif;
     text-align: center;
@@ -15,21 +28,20 @@ body {
 
 #dayDisplay {
     position: relative;
+    display: inline;
     left: 30vw;
-    width: 40vw;
-    color: rgb(138, 132, 132);
-    font-size: 2vw;
+    color: rgb(228, 228, 228);
+    font-size: 4vw;
     font-family: 'Kumbh Sans', sans-serif;
-    text-align: right;
+    text-align: center;
 }
-
 
 #dateDisplay {
     position: relative;
+    display: inline;
     left: 30vw;
-    width: 40vw;
-    color: rgb(138, 132, 132);
-    font-size: 2vw;
+    color: rgb(228, 228, 228);
+    font-size: 4vw;
     font-family: 'Kumbh Sans', sans-serif;
-    text-align: left;
+    text-align: center;
 }

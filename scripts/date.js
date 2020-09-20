@@ -3,7 +3,7 @@ function todayDay() {
     // Declare an array containing the days of the week starting with Sunday
     let weekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     // Get current day of the week and display it 
-    document.getElementById('dayDisplay').innerHTML = weekDay[now.getDay()];
+    document.getElementById('dayDisplay').innerHTML = weekDay[now.getDay()] + ", ";
 } 
 
 function startDate() {
@@ -13,5 +13,6 @@ function startDate() {
     month = month[now.getMonth()];
     let day = now.getDate();
 
-    document.getElementById('dateDisplay').innerHTML = year + " " + month + " " + day;
+    document.getElementById('dateDisplay').innerHTML = day + " " + month;
+    document.getElementById('yearDisplay').innerHTML = year;
 }

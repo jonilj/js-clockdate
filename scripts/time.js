@@ -1,13 +1,14 @@
 // Function to calculate current time
 function startTime() {
   let now = new Date();
-  let s = now.getSeconds();
-  let m = now.getMinutes();
-  let h = now.getHours();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('timeDisplay').innerHTML = h + ":" + m + ":" + s;
-  let t = setTimeout(startTime, 500);
+  let sec = now.getSeconds();
+  let min = now.getMinutes();
+  let hour = now.getHours();
+  hour = checkTime(hour)
+  min = checkTime(min);
+  sec = checkTime(sec);
+  document.getElementById('timeDisplay').innerHTML = hour + ":" + min + ":" + sec;
+  setTimeout(startTime, 500);
 } 
 
 // If number is less than 10, add 0 in front

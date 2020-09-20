@@ -6,17 +6,28 @@ body {
     position: relative;
     padding-top: 35vh;
     left: 30vw;
-    width: 35vw;
+    width: 40vw;
     color: rgb(138, 132, 132);
     font-size: 10vw;
     font-family: 'Kumbh Sans', sans-serif;
-    text-align: left;
+    text-align: center;
 }
 
 #dayDisplay {
     position: relative;
     left: 30vw;
-    width: 35vw;
+    width: 40vw;
+    color: rgb(138, 132, 132);
+    font-size: 2vw;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: right;
+}
+
+
+#dateDisplay {
+    position: relative;
+    left: 30vw;
+    width: 40vw;
     color: rgb(138, 132, 132);
     font-size: 2vw;
     font-family: 'Kumbh Sans', sans-serif;

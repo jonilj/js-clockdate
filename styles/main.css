@@ -1,86 +1,104 @@
+/* Styling for body and background elements */
 body {
-    position: static;
-    background-color: black;
+  position: static;
+  background-color: rgba(0, 0, 0, 0.877);
 }
 
 .background {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-image: url("../content/bg1.jpg");
-    opacity: 0.5;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../content/bg1.jpg");
+  opacity: 0.35;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* Styling for the menu and menu-icon */
-.menu-container {
-    position: absolute;
-}
-
 .menu {
-    width: 6vw;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
+  position: absolute;
+  background: transparent;
+  border: none;
+  height: 6vh;
+  cursor: pointer;
+  padding: 1.7vh 0 1vh 1vw;
+  margin: auto;
 }
 
 /* Styling for menu-icon */
-.line {
-    fill: none;
-    stroke: rgb(233, 233, 233);
-    stroke-width: 6;
-    transition: stroke-dasharray 700ms cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-dashoffset 700ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-.line1 {
-    stroke-dasharray: 60 207;
-    stroke-width: 6;
-  }
-.line2 {
-    stroke-dasharray: 60 60;
-    stroke-width: 6;
-  }
-.line3 {
-    stroke-dasharray: 60 207;
-    stroke-width: 6;
-  }
-.opened .line1 {
-    stroke-dasharray: 90 207;
-    stroke-dashoffset: -134;
-    stroke-width: 6;
-  }
-.opened .line2 {
-    stroke-dasharray: 1 60;
-    stroke-dashoffset: -30;
-    stroke-width: 6;
-  }
-.opened .line3 {
-    stroke-dasharray: 90 207;
-    stroke-dashoffset: -134;
-    stroke-width: 6;
+.menu-lines {
+  fill: rgb(233, 233, 233);
+  opacity: 0.75;
 }
 
+.menu:hover .menu-lines {
+  opacity: 1;
+}
+
+/* Styling for dropdown menu */
+.menu-dropdown-background {
+  display: none;
+  position: absolute;
+  left: 1vw;
+  min-width: 20vw;
+  min-height: 60vh;
+  background-color: rgb(55, 66, 65);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+  opacity: 0.5;
+}
+.menu-dropdown-content {
+  display: none;
+  position: absolute;
+  left: 1vw;
+  min-width: 14vw;
+  min-height: 60vh;
+  text-align: left;
+  z-index: 1;
+}
+
+h1 {
+  color:rgb(233, 233, 233);
+  margin: 1vw;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 2.65vw;
+}
+
+h2 {
+  color:rgb(233, 233, 233);
+  margin: 1vw;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.95vw;
+}
+
+.menu:hover .menu-dropdown-content {
+  display: block;
+}
+
+.menu:hover .menu-dropdown-background {
+  display: block;
+}
+
+/* Styling for the time and date display */
 #timeDisplay {
-    position: relative;
-    padding-top: 30vh;
-    left: 29.5vw;
-    width: 40vw;
-    font-size: 10vw;
+position: relative;
+padding-top: 30vh;
+left: 29.5vw;
+width: 40vw;
+font-size: 10vw;
 }
 
 #dayDisplay, #dateDisplay {
-    position: relative;
-    display: inline;
-    left: 30vw;
-    font-size: 4vw;
+  position: relative;
+  display: inline;
+  left: 30vw;
+  font-size: 4vw;
 }
+
 /* Common styling for the time, day and date display */
 #timeDisplay, #dayDisplay, #dateDisplay {
-    font-family: 'Kumbh Sans', sans-serif;
-    text-align: center;
-    color: rgb(233, 233, 233);
+  font-family: 'Kumbh Sans', sans-serif;
+  text-align: center;
+  color: rgb(233, 233, 233);
 }

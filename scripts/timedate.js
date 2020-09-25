@@ -17,13 +17,30 @@ function checkTime(i) {
     return i;
 }
 
+<<<<<<< HEAD
 // Function to get current day (name and number) and month
 function startDate() {
   let now = new Date();
   let weekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+=======
+// Function to get current weekday (by name)
+function todayDay() {
+  let now = new Date();
+  let weekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  document.getElementById('dayDisplay').innerHTML = weekDay[now.getDay()] + ", ";
+} 
+
+// Function to get current day and month
+function startDate() {
+  let now = new Date();
+>>>>>>> 4bfdb94d5410d92044f6db19a32f69280543c76c
   let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   month = month[now.getMonth()];
   let day = now.getDate();
 
+<<<<<<< HEAD
   document.getElementById('dateDisplay').innerHTML = weekDay[now.getDay()] + ", " + month + " " + day;
+=======
+  document.getElementById('dateDisplay').innerHTML = month + " " + day;
+>>>>>>> 4bfdb94d5410d92044f6db19a32f69280543c76c
 }
